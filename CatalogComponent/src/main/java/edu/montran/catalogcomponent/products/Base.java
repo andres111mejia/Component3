@@ -2,10 +2,14 @@ package edu.montran.catalogcomponent.products;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public abstract class Base implements Serializable {
 
 	private static final long serialVersionUID = -8192443565038249778L;
-
+	@Id
 	protected int id;
 	
 	protected String name;
